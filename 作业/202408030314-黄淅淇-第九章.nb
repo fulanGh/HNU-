@@ -1,0 +1,183 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5702,        173]
+NotebookOptionsPosition[      4969,        151]
+NotebookOutlinePosition[      5402,        168]
+CellTagsIndexPosition[      5359,        165]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"X", "''"}], "[", "x", "]"}], "+", 
+       RowBox[{"\[Lambda]", " ", 
+        RowBox[{"X", "[", "x", "]"}]}]}], "==", "0"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"X", "'"}], "[", "0", "]"}], "==", "0"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"X", "'"}], "[", "l", "]"}], "+", 
+       RowBox[{"h", " ", 
+        RowBox[{"X", "[", "l", "]"}]}]}], "==", "0"}]}], "}"}], ",", 
+   RowBox[{"X", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.956368012520059*^9, 3.9563680304747486`*^9}, 
+   3.9563681737059526`*^9, {3.9563682939842424`*^9, 3.956368378642434*^9}, {
+   3.9563684186437006`*^9, 3.9563684810998983`*^9}, {3.9563685258345118`*^9, 
+   3.9563685604435225`*^9}, {3.956368612014126*^9, 3.9563686248050776`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"dd11428c-728a-45cb-9ac1-119f919299b0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"X", "[", "x", "]"}], "\[Rule]", 
+    TagBox[GridBox[{
+       {"\[Piecewise]", GridBox[{
+          {
+           RowBox[{
+            TemplateBox[{"1"},
+             "C"], " ", 
+            RowBox[{"Cos", "[", 
+             RowBox[{"x", " ", 
+              SqrtBox["\[Lambda]"]}], "]"}]}], 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Cos", "[", 
+                RowBox[{"l", " ", 
+                 SqrtBox["\[Lambda]"]}], "]"}], "\[NotEqual]", "0"}], "&&", 
+              RowBox[{"h", "\[Equal]", 
+               RowBox[{
+                SqrtBox["\[Lambda]"], " ", 
+                RowBox[{"Tan", "[", 
+                 RowBox[{"l", " ", 
+                  SqrtBox["\[Lambda]"]}], "]"}]}]}]}], ")"}], "||", 
+            RowBox[{"\[Lambda]", "\[Equal]", "0"}]}]},
+          {"0", 
+           TagBox["True",
+            "PiecewiseDefault",
+            AutoDelete->True]}
+         },
+         AllowedDimensions->{2, Automatic},
+         Editable->True,
+         GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+         GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.84]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}},
+         Selectable->True]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.35]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     "Piecewise",
+     DeleteWithContents->True,
+     Editable->False,
+     SelectWithContents->True,
+     Selectable->False,
+     StripWrapperBoxes->True]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.956368568816473*^9, 3.9563686573403807`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"daa93dde-a80c-4b52-8fe9-a46ce1a391ed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"X", "''"}], "[", "x", "]"}], "+", 
+       RowBox[{"\[Lambda]", " ", 
+        RowBox[{"X", "[", "x", "]"}]}]}], "==", "0"}], ",", 
+     RowBox[{
+      RowBox[{"X", "[", "0", "]"}], "==", 
+      RowBox[{"X", "[", 
+       RowBox[{"2", " ", "Pi"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"X", "'"}], "[", "0", "]"}], "==", 
+      RowBox[{
+       RowBox[{"X", "'"}], "[", 
+       RowBox[{"2", "Pi"}], "]"}]}]}], "}"}], ",", 
+   RowBox[{"X", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.956368461973843*^9, 3.956368465074222*^9}, {
+  3.9563687410360575`*^9, 3.956368817313999*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"7b05e634-1976-4ac8-b160-41ce9f06e850"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"X", "[", "x", "]"}], "\[Rule]", "0"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.956368818080287*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"b35303d4-d604-449a-bcb8-0126bc92a74b"]
+}, Open  ]]
+},
+WindowSize->{574.8, 573.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (2022\:5e746\:670816\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4b246b6e-0603-4ee5-b4fc-529b7abb7979"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 995, 25, 43, "Input",ExpressionUUID->"dd11428c-728a-45cb-9ac1-119f919299b0"],
+Cell[1578, 49, 2244, 62, 84, "Output",ExpressionUUID->"daa93dde-a80c-4b52-8fe9-a46ce1a391ed"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3859, 116, 838, 24, 64, "Input",ExpressionUUID->"7b05e634-1976-4ac8-b160-41ce9f06e850"],
+Cell[4700, 142, 253, 6, 32, "Output",ExpressionUUID->"b35303d4-d604-449a-bcb8-0126bc92a74b"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
